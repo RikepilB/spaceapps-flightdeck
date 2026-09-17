@@ -3,7 +3,7 @@
 ## Current state
 
 Bilingual English/Spanish pages, persistent light/dark themes and the non-official
-winner-advice field note are implemented and locally verified. Deployment receipt:
+winner-advice field note are live and verified on GitHub Pages. Deployment receipt:
 [2026-09-17-bilingual-theme](2026-09-17-bilingual-theme/HANDOFF.md).
 
 Crew/readiness addition: new crew.html provides preparation instructions, capability

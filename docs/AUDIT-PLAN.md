@@ -141,3 +141,6 @@ not official event policy, and connect it to the more detailed six-role planner.
   server form; privacy/legal — local theme and crew storage are disclosed and nothing
   is transmitted by the site; operations — publishing/recovery owner and Actions path
   are recorded in `docs/PUBLISHING.md`. No new third party or data collection added.
+- Public deployment: validate run 35181222026 and Pages run 35181222051 passed for
+  commit `fa90db9`. Fresh-browser EN/ES navigation, saved theme, Spanish role
+  suggestion and local board, 320px layout, console, robots and sitemap were checked.

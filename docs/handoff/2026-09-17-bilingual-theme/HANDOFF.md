@@ -5,7 +5,7 @@ and incorporate the six tips the maintainer received from a past winner.
 
 ## Current state
 
-Implementation complete in the canonical public checkout. Four static entry points
+Published in commit `fa90db90b5d131c6dc043d0eb2f8199e1cb54f59`. Four static entry points
 provide complete English/Spanish content. Shared scripts localize prompts and all
 generated crew-planner states. Theme follows the operating system on first visit and
 persists locally after selection.
@@ -29,6 +29,11 @@ saved theme and team data across navigation, Spanish generated content, 320px la
 contrast and console errors. A mixed-language native file label found during review was
 fixed and rechecked.
 
+GitHub validate run 35181222026 and Pages run 35181222051 both succeeded. On the
+public site, EN/ES navigation, saved Light mode, six Spanish roles, seven Spanish
+capabilities, the `Datos` suggestion, a synthetic local team row and 320px layout all
+worked without browser errors. Public `robots.txt` and `sitemap.xml` returned HTTP 200.
+
 ## Failed attempts
 
 PowerShell treated unquoted accessibility refs beginning with `@` as syntax; browser
@@ -36,5 +41,5 @@ checks switched to quoted CSS selectors. No product behavior was affected.
 
 # Next steps
 
-Commit, push, wait for GitHub Actions and verify all four public pages plus robots and
-sitemap on the deployed commit.
+No pending work for this request. A dedicated social-preview image remains an optional
+future sharing enhancement.
