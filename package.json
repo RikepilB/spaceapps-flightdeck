@@ -7,7 +7,7 @@
   "scripts": {
     "validate": "node scripts/validate-plugin.mjs",
     "evals": "node scripts/eval-status.mjs",
-    "test": "node scripts/test-validator.mjs && node scripts/test-stress.mjs && node scripts/test-contracts.mjs && node scripts/test-site.mjs && node --test scripts/test-team.mjs",
+    "test": "node scripts/test-validator.mjs && node scripts/test-stress.mjs && node scripts/test-contracts.mjs && node scripts/test-site.mjs && node --check site/preferences.mjs && node --check site/crew.js && node --test scripts/test-team.mjs",
     "serve": "node scripts/serve-site.mjs"
   },
   "engines": {

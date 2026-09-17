@@ -4,6 +4,7 @@ A portable Space Apps workflow library: **nine specialist roles, eleven skills,
 adversarial evaluations, and an editable field guide**.
 
 **[Open the tutorial](https://rikepilb.github.io/spaceapps-flightdeck/)** ·
+**[Español](https://rikepilb.github.io/spaceapps-flightdeck/index.es.html)** ·
 [Audit and limits](docs/AUDIT.md) · [Any-model guide](CODEX.md)
 
 **[Crew & readiness planner](https://rikepilb.github.io/spaceapps-flightdeck/crew.html)**:

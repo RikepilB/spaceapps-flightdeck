@@ -2,6 +2,10 @@
 
 ## Current state
 
+Bilingual English/Spanish pages, persistent light/dark themes and the non-official
+winner-advice field note are implemented and locally verified. Deployment receipt:
+[2026-09-17-bilingual-theme](2026-09-17-bilingual-theme/HANDOFF.md).
+
 Crew/readiness addition: new crew.html provides preparation instructions, capability
 self-check, human roles mapped to AI helpers, role coverage and a local readiness
 board with JSON snapshot sharing. All prior tests plus 25 new tests pass. See
@@ -20,3 +24,4 @@ unverified. See docs/AUDIT.md for the behavioral failures, fixes and reruns.
 |---|---|
 | 2026-09-17 | Initial public snapshot: portable guidance, stress tests and Pages tutorial |
 | 2026-09-17 | Crew and readiness page, capability self-check and local team board |
+| 2026-09-17 | English/Spanish pages, light/dark themes and winner-advice field note |

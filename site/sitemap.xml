@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://rikepilb.github.io/spaceapps-flightdeck/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rikepilb.github.io/spaceapps-flightdeck/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://rikepilb.github.io/spaceapps-flightdeck/index.es.html" />
+  </url>
+  <url>
+    <loc>https://rikepilb.github.io/spaceapps-flightdeck/index.es.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rikepilb.github.io/spaceapps-flightdeck/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://rikepilb.github.io/spaceapps-flightdeck/index.es.html" />
+  </url>
+  <url>
+    <loc>https://rikepilb.github.io/spaceapps-flightdeck/crew.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rikepilb.github.io/spaceapps-flightdeck/crew.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://rikepilb.github.io/spaceapps-flightdeck/crew.es.html" />
+  </url>
+  <url>
+    <loc>https://rikepilb.github.io/spaceapps-flightdeck/crew.es.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rikepilb.github.io/spaceapps-flightdeck/crew.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://rikepilb.github.io/spaceapps-flightdeck/crew.es.html" />
+  </url>
+</urlset>

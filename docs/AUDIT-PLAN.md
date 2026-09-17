@@ -90,3 +90,54 @@ showed recovery messages. No backend requests are made by planner code.
 Visual review: PASS, consistent with existing brief; cards group real responsibilities
 and collapse to a readable column. Launch review: local-storage disclosure and JSON
 sharing warning present; no server forms, account system, tracking or live-sync claim.
+
+## Bilingual and theme addition — 2026-09-17
+
+Audience and primary actions stay the same in English and Spanish: understand the
+harness, run the first review, then organize a crew. Preserve the field-notebook
+direction and information architecture; language and color scheme are utilities,
+not a new visual concept. Publish distinct English and Spanish HTML entry points so
+the complete guide, links and metadata remain useful without JavaScript. Keep one
+shared interaction layer for prompt selection, crew planning and theme preference.
+
+Use explicit EN/ES links and Light/Dark buttons in the header. The selected theme is
+saved locally and falls back to the operating-system preference on first visit.
+Dark mode uses deep blue-green paper, warm pale text, visible blue links and the
+existing lime accent; it must retain thin-rule hierarchy and readable form states.
+Translate generated crew content, validation feedback and readiness controls as well
+as static headings. Do not translate filenames, agent/skill identifiers or external
+product names. Verify all four entry points, cross-language navigation, saved theme,
+keyboard states, contrast, desktop/mobile layout and no-JavaScript English/Spanish
+content. Re-run visual, landing and production checks after rendering.
+
+Add the six points the maintainer received from a past winner as a compact field note:
+start brainstorming and NASA-data exploration early; assess challenges calmly when
+released; inspect available data before defining the solution; build a simple working
+MVP; prepare story, demo and presentation from the start; initially divide ownership
+across development, data/research and presentation. Label this as personal advice,
+not official event policy, and connect it to the more detailed six-role planner.
+
+### Bilingual/theme rendered review and launch checks
+
+- Anti-slop review: PASS at desktop and 320px. English light, English dark,
+  Spanish light and Spanish dark preserve the flight-notebook hierarchy. The theme
+  and language controls are compact utilities in the header; they do not compete with
+  the first-review action. The winner note adds sourced practitioner context without
+  presenting it as official policy.
+- Dynamic behavior: Spanish renders six translated human roles, seven capabilities,
+  suggestions, coverage, readiness controls, storage/import feedback and validation
+  errors. A saved Spanish Data member reappeared in English with English role/readiness
+  copy. Theme persisted across language and page navigation. Browser console was clear.
+- Responsive/accessibility: 320px document width was 305px with no overflow. English
+  and Spanish controls expose page language, pressed theme state, visible focus rules
+  and localized labels. The native file-picker text appeared in English during review;
+  it was visually replaced with a localized file label while retaining an accessible
+  input. Main text, muted text and link contrast measured 6.03:1–15.88:1.
+- Landing audit: page-specific titles/descriptions, canonicals, reciprocal `hreflang`,
+  favicon, working actions, HTTPS targets, `robots.txt` and bilingual sitemap present.
+  A dedicated social-preview image is still absent; this is a sharing enhancement,
+  not a broken page. Public HTTPS and deployment are verified after the push.
+- Production readiness: analytics — n/a, deliberately absent; CAPTCHA — n/a, no
+  server form; privacy/legal — local theme and crew storage are disclosed and nothing
+  is transmitted by the site; operations — publishing/recovery owner and Actions path
+  are recorded in `docs/PUBLISHING.md`. No new third party or data collection added.

@@ -10,8 +10,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rikepilb.github.io/spaceapps-flightdeck/">
   <link rel="canonical" href="https://rikepilb.github.io/spaceapps-flightdeck/">
+  <link rel="alternate" hreflang="en" href="https://rikepilb.github.io/spaceapps-flightdeck/">
+  <link rel="alternate" hreflang="es" href="https://rikepilb.github.io/spaceapps-flightdeck/index.es.html">
+  <link rel="alternate" hreflang="x-default" href="https://rikepilb.github.io/spaceapps-flightdeck/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script src="./theme-init.js"></script>
   <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./preferences.mjs"></script>
   <script src="./app.js" defer></script>
   <title>Space Apps Flightdeck — a field guide for your team</title>
 </head>
@@ -19,7 +24,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead wrap">
     <a class="wordmark" href="#" aria-label="Space Apps Flightdeck home"><span class="mark" aria-hidden="true">↗</span> SPACE APPS <span>FLIGHTDECK</span></a>
-    <nav aria-label="Main navigation"><a href="#start">Start here</a><a href="./crew.html">Crew & readiness</a><a href="https://github.com/RikepilB/spaceapps-flightdeck">GitHub ↗</a></nav>
+    <div class="header-tools"><nav aria-label="Main navigation"><a href="#start">Start here</a><a href="./crew.html">Crew & readiness</a><a href="https://github.com/RikepilB/spaceapps-flightdeck">GitHub ↗</a></nav><div class="preferences" aria-label="Display preferences"><div class="preference-group" aria-label="Language"><a href="./index.html" lang="en" aria-current="page">EN</a><a href="./index.es.html" lang="es" hreflang="es">ES</a></div><div class="preference-group" aria-label="Color theme"><button type="button" data-theme="light" aria-pressed="false">Light</button><button type="button" data-theme="dark" aria-pressed="false">Dark</button></div></div></div>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">

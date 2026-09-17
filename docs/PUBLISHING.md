@@ -4,12 +4,20 @@ Repository: https://github.com/RikepilB/spaceapps-flightdeck
 
 Tutorial: https://rikepilb.github.io/spaceapps-flightdeck/
 
+Spanish: https://rikepilb.github.io/spaceapps-flightdeck/index.es.html
+
 ## Publication boundary
 
 The public repository starts with a reviewed snapshot of source, documentation,
 synthetic fixtures and the website. Original development history, session transcripts,
 raw runtime logs, credentials and local evidence are excluded. Keep personal/team
 information out of public issues and pull requests.
+
+English and Spanish are separate static HTML entry points with reciprocal hreflang
+metadata. Language changes by link, so both versions remain readable without
+JavaScript. The light/dark preference is stored under `flightdeck-theme` in localStorage;
+on a first visit it follows the operating-system preference. It contains no identity
+or activity data.
 
 Only site/ is uploaded to Pages. The crew planner has a local-only form and stores
 aliases, capability self-reports and readiness in browser localStorage. Nothing is
