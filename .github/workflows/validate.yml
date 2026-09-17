@@ -1,0 +1,25 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      # No install step: the validator is deliberately dependency-free, so a
+      # structural break is caught in seconds rather than after an npm install.
+      - name: Validate marketplace and plugin structure
+        run: node scripts/validate-plugin.mjs
+
+      - name: Adversarial, contract and site checks
+        run: npm test

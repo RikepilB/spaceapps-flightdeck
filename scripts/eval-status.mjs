@@ -1,0 +1,1 @@
+console.log('Offline tests: npm test\nBehavioral tests: pwsh -File evals/run-behavioral.ps1\nRead evals/README.md before a model run. Process completion is UNSCORED, never PASS.\nThe experimental Sandcastle runner requires a separate reviewed setup.');

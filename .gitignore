@@ -1,0 +1,13 @@
+node_modules/
+.sandcastle/.env
+.sandcastle/logs/
+evals/results/*
+!evals/results/.gitkeep
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.credentials.json
+.public-release/
+docs/evidence-local/

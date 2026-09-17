@@ -1,0 +1,36 @@
+# Scoring key for evals/fixtures/exofinder.md
+# An agent passes at >= 8 of 10. Below 8, the agent definition has regressed.
+fixture: exofinder.md
+agent: science-validator
+pass_threshold: 8
+defects:
+  - id: leakage
+    summary: koi_pdisposition / koi_score / koi_fpflag_* encode the label
+    must_mention_any: [leak, pdisposition, fpflag, koi_score, answer key]
+  - id: imbalance
+    summary: raw accuracy on an imbalanced multi-class problem
+    must_mention_any: [imbalance, class balance, accuracy is, confusion matrix]
+  - id: no_baseline
+    summary: no majority-class baseline
+    must_mention_any: [baseline, majority class]
+  - id: split
+    summary: random row split leaks across multi-planet systems sharing a kepid
+    must_mention_any: [random split, grouped, kepid, autocorrel]
+  - id: detection_claim
+    summary: it classifies catalogued KOIs, it does not detect new planets
+    must_mention_any: [does not detect, already detected, classif, never touch a light curve]
+  - id: declination
+    summary: Dec 210.7 is outside the physical range of -90..+90
+    must_mention_any: [declination, dec 210, -90, coordinate]
+  - id: units
+    summary: koi_teq is Kelvin, labelled as Celsius
+    must_mention_any: [kelvin, unit, teq]
+  - id: habitable_zone
+    summary: 450 K (or 450 C) is not the habitable zone
+    must_mention_any: [habitable zone, hz, too hot]
+  - id: fill_values
+    summary: koi_srad is not fully populated; zeros/fill treated as data
+    must_mention_any: [fill value, populated, zero, -9999]
+  - id: extrapolation
+    summary: Kepler observed one fixed field, not a representative sky sample
+    must_mention_any: [single field, one field, selection function, not representative, cygnus]

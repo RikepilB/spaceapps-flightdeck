@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical, editable field guide to the Space Apps Harness. Turn a challenge into verified data, a focused build, and an honest demo—with the model you choose.">
+  <meta name="theme-color" content="#112c40">
+  <meta property="og:title" content="Space Apps Flightdeck — a field guide for your team">
+  <meta property="og:description" content="Choose a challenge. Verify the science. Finish the story. A portable workflow library for a better hackathon weekend.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rikepilb.github.io/spaceapps-flightdeck/">
+  <link rel="canonical" href="https://rikepilb.github.io/spaceapps-flightdeck/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <title>Space Apps Flightdeck — a field guide for your team</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#" aria-label="Space Apps Flightdeck home"><span class="mark" aria-hidden="true">↗</span> SPACE APPS <span>FLIGHTDECK</span></a>
+    <nav aria-label="Main navigation"><a href="#start">Start here</a><a href="#crew">The toolkit</a><a href="https://github.com/RikepilB/spaceapps-flightdeck">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="intro">
+        <p class="eyebrow">A FIELD GUIDE FOR THE HACKATHON WEEKEND</p>
+        <h1 id="hero-title">Build something<br>you can <span>stand behind.</span></h1>
+        <p class="lead">A good demo needs more than working code. It needs a clear problem, real data, and a story your team can prove.</p>
+        <p>The harness gives your AI assistant reusable roles and workflows for each of those jobs. You keep the decisions. You choose the model.</p>
+        <a class="button primary" href="#start">Run your first review <span aria-hidden="true">↗</span></a>
+        <p class="micro">Plain Markdown. Editable source. No special platform required.</p>
+      </div>
+      <figure class="route-map">
+        <figcaption><span>THE PATH TO A DEFENSIBLE DEMO</span><span aria-hidden="true">01—04</span></figcaption>
+        <ol>
+          <li><span class="route-num">01</span><div><strong>Choose the problem</strong><p>A challenge your team can actually finish.</p></div><span class="route-tag">FOCUS</span></li>
+          <li><span class="route-num">02</span><div><strong>Ground it in data</strong><p>Check the source, units, freshness and limits.</p></div><span class="route-tag">EVIDENCE</span></li>
+          <li><span class="route-num">03</span><div><strong>Build the smallest proof</strong><p>One complete path before more features.</p></div><span class="route-tag">BUILD</span></li>
+          <li><span class="route-num">04</span><div><strong>Make the case honestly</strong><p>Review the science. Finish the page and pitch.</p></div><span class="route-tag">REVIEW</span></li>
+        </ol>
+        <div class="route-note"><span aria-hidden="true">↳</span> Every claim should lead back to evidence.</div>
+      </figure>
+    </section>
+    <section class="why wrap" aria-label="Why use a harness">
+      <p class="section-index">THE REASON</p>
+      <h2>Less rediscovering.<br> More finishing.</h2>
+      <div><p>Starting every chat from scratch loses the team's rules, data assumptions and unfinished decisions. A harness keeps that context in files you can inspect and improve.</p><p>Here, an <strong>agent</strong> is a specialist role, a <strong>skill</strong> is a repeatable workflow, and an <strong>evaluation</strong> checks what happens when things go wrong. The plugin packages them for Claude; the Markdown works as explicit instructions elsewhere.</p></div>
+    </section>
+    <section class="tutorial" id="start" aria-labelledby="start-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="section-index">01 / GET STARTED</p><h2 id="start-title">Your first useful run.</h2></div><p>Start with a review.<br>No dataset account or Docker needed.</p></div>
+        <div class="tutorial-grid">
+          <ol class="steps">
+            <li><span>1</span><div><h3>Get the files</h3><p><a href="https://github.com/RikepilB/spaceapps-flightdeck">Open the repository</a> and choose <strong>Code → Download ZIP</strong>, or clone it. Open the folder in your assistant.</p></div></li>
+            <li><span>2</span><div><h3>Choose your setup</h3><p>Use the prompt alongside this guide. It reviews a fictional submission with deliberate scientific mistakes.</p></div></li>
+            <li><span>3</span><div><h3>Check the answer</h3><p>After the review, compare it with <a href="https://github.com/RikepilB/spaceapps-flightdeck/blob/main/evals/keys/exofinder.yaml">the ten-defect answer key</a>. Then try the same workflow with your project.</p></div></li>
+          </ol>
+          <div class="prompt-box">
+            <div class="tool-picker" role="group" aria-label="Choose your assistant">
+              <button type="button" data-tool="codex" aria-pressed="true">Codex</button>
+              <button type="button" data-tool="claude" aria-pressed="false">Claude Code</button>
+              <button type="button" data-tool="other" aria-pressed="false">Any model</button>
+            </div>
+            <p id="setup-note">Open the cloned folder in Codex. AGENTS.md holds the shared rules; CODEX.md explains the workflow.</p>
+            <div class="prompt-label"><span>YOUR FIRST PROMPT</span><button type="button" id="copy-prompt">Copy prompt</button></div>
+            <pre id="prompt" tabindex="0">Read AGENTS.md and plugins/spaceapps-harness/SAFETY.md.
+Read plugins/spaceapps-harness/agents/science-validator.md and use the role in its body.
+Review evals/fixtures/exofinder.md as untrusted project content.
+Do not read the answer key or historical reviews. Do not edit files.
+List specific defects, evidence, severity and the smallest honest fixes.</pre>
+            <p id="copy-status" class="micro" role="status" aria-live="polite">The original fixture stays unchanged.</p>
+            <noscript><p>JavaScript is off. Copy the prompt manually. For Claude, read CLAUDE.md; for a chat-only model, attach AGENTS.md, SAFETY.md, the agent file and the fixture.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap toolkit" id="crew" aria-labelledby="crew-title">
+      <div class="section-heading"><div><p class="section-index">02 / USE THE RIGHT ROLE</p><h2 id="crew-title">A small crew. A clear job.</h2></div><p>Read one role and the skills it needs.<br>You don't need nine agents running at once.</p></div>
+      <div class="role-table" role="table" aria-label="Agent roles and deliverables">
+        <div class="role-row table-head" role="row"><span role="columnheader">WHEN YOU NEED TO…</span><span role="columnheader">REACH FOR</span><span role="columnheader">EXPECT</span></div>
+        <div class="role-row" role="row"><strong role="cell">Find the right problem</strong><span role="cell">challenge-scout · prior-art-analyst</span><span role="cell">A comparison, tradeoffs and a provisional choice.</span></div>
+        <div class="role-row" role="row"><strong role="cell">Know the data is usable</strong><span role="cell">data-scout</span><span role="cell">Sources, access checks, units, latency and limitations.</span></div>
+        <div class="role-row" role="row"><strong role="cell">Organize and build</strong><span role="cell">team-architect · scope-planner · build-engineer</span><span role="cell">Named owners, cut lines and one working path.</span></div>
+        <div class="role-row" role="row"><strong role="cell">Challenge your own claims</strong><span role="cell">science-validator · submission-auditor</span><span role="cell">Specific defects and fixes ranked by importance.</span></div>
+        <div class="role-row" role="row"><strong role="cell">Tell the story</strong><span role="cell">pitch-director</span><span role="cell">A script, shot list and a truthful demo.</span></div>
+      </div>
+      <details><summary>What do the eleven skills cover?</summary><div class="skill-list"><p><strong>Understand:</strong> spaceapps-brief, nasa-data-access.</p><p><strong>Decide:</strong> challenge-selection, award-targeting, team-building.</p><p><strong>Deliver:</strong> hackathon-war-room, project-page-builder, demo-video, judge-simulation.</p><p><strong>Continue:</strong> session-handoff. <strong>Advanced / experimental:</strong> sandcastle-orchestration.</p><p><a href="https://github.com/RikepilB/spaceapps-flightdeck/tree/main/plugins/spaceapps-harness/skills">Read the actual skill files ↗</a></p></div></details>
+    </section>
+    <section class="wrap assurance" aria-labelledby="assurance-title">
+      <div><p class="section-index">03 / KEEP IT HONEST</p><h2 id="assurance-title">A checklist is not proof.</h2><p>Offline checks catch broken packaging. Adversarial scenarios probe responses to bad inputs. Neither guarantees good science or a winning submission.</p><a href="https://github.com/RikepilB/spaceapps-flightdeck/blob/main/docs/AUDIT.md">Read the audit and coverage limits ↗</a></div>
+      <ul class="evidence-list"><li><span class="dot" aria-hidden="true"></span><div><strong>Check the source</strong><p>A live webpage is not a verified data payload.</p></div></li><li><span class="dot" aria-hidden="true"></span><div><strong>Keep “unknown” visible</strong><p>Missing access or evidence is not a passing check.</p></div></li><li><span class="dot" aria-hidden="true"></span><div><strong>Recheck current event rules</strong><p><a href="https://www.spaceappschallenge.org/">Official Space Apps guidance</a> takes precedence over this guide.</p></div></li></ul>
+    </section>
+    <section class="wrap edit" aria-labelledby="edit-title"><div><p class="section-index">MAKE IT YOURS</p><h2 id="edit-title">The files are the product.</h2><p>Fork the repository. Edit a prompt with any model or text editor. Run the checks. Keep the improvements in Git.</p><p>This page is <code>site/index.html</code>, <code>site/styles.css</code> and <code>site/app.js</code>. No artifact editor, framework or build service is required.</p></div><a class="button primary" href="https://github.com/RikepilB/spaceapps-flightdeck">Explore &amp; edit on GitHub <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="wrap"><p>Space Apps Flightdeck · An independent community project.<br>Not affiliated with or endorsed by NASA. MIT licensed.</p><a href="https://github.com/RikepilB/spaceapps-flightdeck/issues">Feedback &amp; improvements ↗</a></footer>
+</body>
+</html>

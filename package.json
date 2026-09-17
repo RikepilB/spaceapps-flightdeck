@@ -1,0 +1,17 @@
+{
+  "name": "spaceapps-flightdeck",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Portable Space Apps workflow library, Claude plugin, evaluation suite and editable tutorial",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-plugin.mjs",
+    "evals": "node scripts/eval-status.mjs",
+    "test": "node scripts/test-validator.mjs && node scripts/test-stress.mjs && node scripts/test-contracts.mjs && node scripts/test-site.mjs",
+    "serve": "node scripts/serve-site.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
