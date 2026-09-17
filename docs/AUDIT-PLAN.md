@@ -64,3 +64,5 @@ Verification evidence is appended here after rendered review.
   has its own policies. MIT file, independent-project disclaimer and recovery runbook
   in docs/PUBLISHING.md are present. No invented legal policy.
 - Artifact reference: Cloudflare verification prevented reading; no fidelity claim.
+- Public deployment: Pages HTTPS confirmed; hosted validate and deploy succeeded.
+  Fresh-browser desktop/mobile, all selectors and both clipboard outcomes verified.

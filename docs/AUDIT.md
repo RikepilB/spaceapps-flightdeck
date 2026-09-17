@@ -1,6 +1,6 @@
 # Flightdeck audit — 2026-09-17 UTC
 
-Release candidate: 0.5.0. This is a tested prompt library and static tutorial, not
+Published version: 0.5.0. This is a tested prompt library and static tutorial, not
 a claim that every model, plugin host or scientific data service works.
 
 ## Confirmed checks
@@ -86,3 +86,16 @@ Sources: [official event](https://www.spaceappschallenge.org/),
 [Codex AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md),
 [Codex skills](https://learn.chatgpt.com/docs/build-skills),
 [GitHub Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+## Public deployment evidence
+
+- Public repository and MIT license confirmed through GitHub API.
+- Initial source commit: 23e730437568879c896575cfa316db5bd46581f4.
+- [Validation run](https://github.com/RikepilB/spaceapps-flightdeck/actions/runs/35174708801): success.
+- [Pages deployment](https://github.com/RikepilB/spaceapps-flightdeck/actions/runs/35174708808): success.
+- Public HTTPS page opened in a fresh browser session. Desktop 1440x1000 and mobile
+  390x844 inspected; no horizontal overflow or failed assets. All three tool options
+  activated by keyboard. Clipboard copy succeeded; forced clipboard denial selected
+  the prompt and showed a manual-copy fallback. Browser error list was empty.
+- Commit hook ran gitleaks: no leaks found. The final published plugin was rescanned
+  with SkillSpector: LOW / 0 / no reported issues.
