@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve('site');
-const mime = { '.html':'text/html; charset=utf-8', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml' };
+const mime = { '.html':'text/html; charset=utf-8', '.css':'text/css', '.js':'text/javascript', '.mjs':'text/javascript', '.svg':'image/svg+xml' };
 createServer(async (req, res) => {
   try {
     const url = new URL(req.url, 'http://localhost');
@@ -12,4 +12,4 @@ createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type':mime[extname(file)] ?? 'application/octet-stream' });
     res.end(data);
   } catch { res.writeHead(404).end('Not found'); }
-}).listen(4173, '127.0.0.1', () => console.log('Tutorial: http://127.0.0.1:4173'));
+}).listen(Number(process.env.PORT || 4173), '127.0.0.1', () => console.log(`Tutorial: http://127.0.0.1:${process.env.PORT || 4173}`));

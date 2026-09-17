@@ -6,6 +6,11 @@ adversarial evaluations, and an editable field guide**.
 **[Open the tutorial](https://rikepilb.github.io/spaceapps-flightdeck/)** ·
 [Audit and limits](docs/AUDIT.md) · [Any-model guide](CODEX.md)
 
+**[Crew & readiness planner](https://rikepilb.github.io/spaceapps-flightdeck/crew.html)**:
+preparation instructions, capability self-check, human roles and their AI helpers,
+responsibility coverage and a local readiness board. Export/import team snapshots;
+there is no live synchronization or account requirement.
+
 ## Why a harness?
 
 A working app is only part of a submission. Teams also need usable data, defensible

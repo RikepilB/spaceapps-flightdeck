@@ -2,6 +2,11 @@
 
 ## Current state
 
+Crew/readiness addition: new crew.html provides preparation instructions, capability
+self-check, human roles mapped to AI helpers, role coverage and a local readiness
+board with JSON snapshot sharing. All prior tests plus 25 new tests pass. See
+[crew session](2026-09-17-crew-readiness/HANDOFF.md) for browser verification.
+
 Public source snapshot, v0.5.0. Start with docs/AUDIT.md and docs/PUBLISHING.md.
 Private predecessor transcripts and history were deliberately excluded.
 Repository is public and MIT licensed; GitHub Pages is live. Local tests, hosted
@@ -14,3 +19,4 @@ unverified. See docs/AUDIT.md for the behavioral failures, fixes and reruns.
 | Date | Summary |
 |---|---|
 | 2026-09-17 | Initial public snapshot: portable guidance, stress tests and Pages tutorial |
+| 2026-09-17 | Crew and readiness page, capability self-check and local team board |

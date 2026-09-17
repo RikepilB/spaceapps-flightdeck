@@ -66,3 +66,27 @@ Verification evidence is appended here after rendered review.
 - Artifact reference: Cloudflare verification prevented reading; no fidelity claim.
 - Public deployment: Pages HTTPS confirmed; hosted validate and deploy succeeded.
   Fresh-browser desktop/mobile, all selectors and both clipboard outcomes verified.
+
+## Crew planner addition — 2026-09-17
+
+Add crew.html to keep the introductory page short. Retain the flight-notebook visual
+system. Primary journey: preparation guide → capability self-check → explainable
+role suggestions → choose responsibilities → readiness board and coverage gaps.
+Distinguish human roles from AI helpers. Self-reports are provisional, not verified
+competence or personality profiling. No answer is unknown, not a low ability score.
+Persist locally with an explicit notice, JSON export/import and failure feedback.
+No live team sync or row ownership claims; aliases are sufficient. Optional data
+accounts only count when a member needs them. Import is validated before replacement.
+Verify ranking, ties, coverage, conditional readiness, persistence, invalid imports,
+literal rendering of untrusted names, keyboard interactions and mobile overflow.
+Official 2026 homepage/terms checked; older participant guides are labeled historical.
+
+Crew verification: full existing suite and 25 new model tests passed. Rendered at
+1440x1000, 390x844 and 320x740; no horizontal overflow. Keyboard form submission,
+suggestions, persistence/reload, required-account readiness, multi-role edit/save,
+exported JSON, rejected import and confirmed import checked. Imported HTML-like alias
+remained text (zero image elements). Corrupt saved data and forced storage denial
+showed recovery messages. No backend requests are made by planner code.
+Visual review: PASS, consistent with existing brief; cards group real responsibilities
+and collapse to a readable column. Launch review: local-storage disclosure and JSON
+sharing warning present; no server forms, account system, tracking or live-sync claim.

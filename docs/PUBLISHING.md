@@ -11,8 +11,12 @@ synthetic fixtures and the website. Original development history, session transc
 raw runtime logs, credentials and local evidence are excluded. Keep personal/team
 information out of public issues and pull requests.
 
-Only site/ is uploaded to Pages. There is no form, backend, analytics SDK, cookie
-storage or external font. GitHub operates hosting under its own policies.
+Only site/ is uploaded to Pages. The crew planner has a local-only form and stores
+aliases, capability self-reports and readiness in browser localStorage. Nothing is
+sent to a team server. Export creates a user-controlled JSON file; import validates
+it and asks before replacing the local board. Clearing browser data removes saved
+work. There is no backend, live sync, authentication, analytics SDK, cookie storage
+or external font. GitHub operates hosting under its own policies.
 
 ## Editing and recovery
 
